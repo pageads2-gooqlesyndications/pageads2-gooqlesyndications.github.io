@@ -1,0 +1,88 @@
+
+<script type='text/javascript'>
+
+function randomString(len) {
+var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+var string_length = len;
+var randomstring = '';
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1);
+}
+return randomstring;
+}
+
+function randomWtring(len) {
+var chars = "0123456789";
+var string_length = len;
+var randomstring = '';
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1);
+}
+return randomstring;
+}
+
+function randomZtring(len) {
+var chars = "123456789";
+var string_length = len;
+var randomstring = '';
+
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1);
+}
+return randomstring;
+}
+
+var docid = new Array("kAbciB296b8","kAbciB296b8","kAbciB296b8","kAbciB296b8");
+
+var videonumber = docid.length;
+var videoindex = 0;
+
+var videlen = ['210'];
+
+
+var rt2= +videlen[videoindex] + +randomWtring(1);;
+var st3 = randomString(3);
+
+
+function getCPN() {
+var l11 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-", "_"];
+var l1I = "";
+var lIl = 0;
+while (lIl < 16) {
+l1I = (l1I + l11[Math.floor((Math.random() * 64))]);
+lIl++;
+}
+return l1I;
+}
+
+
+
+for (var i = 0; i < 8; i++) {
+var plid = 'AAVw' + randomString(12);
+var cpn = getCPN();
+var vid = randomString(32) + 'C';
+var eurlnumber = randomZtring(1);
+
+document.write('<script type="text/javascript" src="https://www.youtube.com/api/stats/playback?ns=yt&el=detailpage&cpn='+ cpn +'&docid='+ docid[videoindex] +'&ver=2&referrer=https%3A%2F%2Fwww.facebook.com%2F&cmt=0&plid='+ plid +'&ei=GM5AW9SgFcadoQPC-qvoAg&of=hsYNnodbr80UyzCMTY7dJQ&fmt=244&fs=0&rt=9&lact=740&cl=202972897&mos=0&vm=CAEQABgE&volume=92&c=TVHTML5&cver=5.20160729&cplayer=UNIPLAYER&autoplay=1&delay=10&hl=en_US&cr=US&len=120&fexp=23708904%2C23708906%2C23708910%2C23710476%2C23712544%2C23721698%2C23721898%2C23733751%2C23733863%2C23735279%2C23735347%2C23736402%2C23737531%2C23737835%2C23738491%2C23739515%2C23739610%2C23739764%2C23740493%2C23741488%2C23741719%2C23742764%2C23743529%2C23744176%2C23745105%2C23745485%2C23745535%2C23746304%2C23746635%2C23747403%2C23747415%2C23748598%2C23749127%2C9405963%2C9449243%2C9458112%2C9464238%2C9470249%2C9472490%2C9475689%2C9485000%2C9486218&rtn=14&afmt=251"><\/script>');
+
+document.write('<script type="text/javascript" src="https://www.youtube.com/api/stats/delayplay?ns=yt&el=detailpage&cpn='+ cpn +'&docid='+ docid[videoindex] +'&ver=2&referrer=https%3A%2F%2Fwww.facebook.com%2F&cmt=10&plid='+ plid +'&ei=GM5AW9SgFcadoQPC-qvoAg&of=hsYNnodbr80UyzCMTY7dJQ&fmt=244&fs=0&rt=19&lact=740&cl=202972897&mos=0&vm=CAEQABgE&volume=92&c=TVHTML5&cver=5.20160729&cplayer=UNIPLAYER&autoplay=1&delay=10&hl=en_US&cr=US&len=120&fexp=23708904%2C23708906%2C23708910%2C23710476%2C23712544%2C23721698%2C23721898%2C23733751%2C23733863%2C23735279%2C23735347%2C23736402%2C23737531%2C23737835%2C23738491%2C23739515%2C23739610%2C23739764%2C23740493%2C23741488%2C23741719%2C23742764%2C23743529%2C23744176%2C23745105%2C23745485%2C23745535%2C23746304%2C23746635%2C23747403%2C23747415%2C23748598%2C23749127%2C9405963%2C9449243%2C9458112%2C9464238%2C9470249%2C9472490%2C9475689%2C9485000%2C9486218&rtn=14&afmt=251"><\/script>');
+
+document.write('<script type="text/javascript" src="https://www.youtube.com/api/stats/watchtime?ns=yt&el=detailpage&cpn='+ cpn +'&docid='+ docid[videoindex] +'&ver=2&referrer=https%3A%2F%2Fwww.facebook.com%2F&cmt=16&plid='+ plid +'&ei=GM5AW9SgFcadoQPC-qvoAg&of=hsYNnodbr80UyzCMTY7dJQ&fmt=244&fs=0&rt=25&lact=5372&cl=202972897&state=playing&vm=CAEQABgE&volume=92&c=TVHTML5&cver=5.20160729&cplayer=UNIPLAYER&autoplay=1&delay=10&hl=en_US&cr=US&len=120&afmt=251&idpj=-9&ldpj=-36&muted=0&st=0&et=14"><\/script>');
+
+document.write('<script type="text/javascript" src="https://www.youtube.com/api/stats/watchtime?ns=yt&el=detailpage&cpn='+ cpn +'&docid='+ docid[videoindex] +'&ver=2&referrer=https%3A%2F%2Fwww.facebook.com%2F&cmt=60&plid='+ plid +'&ei=GM5AW9SgFcadoQPC-qvoAg&of=hsYNnodbr80UyzCMTY7dJQ&fmt=244&fs=0&rt=63&lact=5372&cl=202972897&state=paused&vm=CAEQABgE&volume=92&c=TVHTML5&cver=5.20160729&cplayer=UNIPLAYER&autoplay=1&delay=10&hl=en_US&cr=US&len=120&afmt=251&idpj=-9&ldpj=-36&muted=0&st=14&et=60"><\/script>');
+
+if (i == 1) {
+videoindex++;
+i = 0;
+}
+
+if (videoindex == videonumber) {
+i = 7;
+}
+
+}
+
+</script>
