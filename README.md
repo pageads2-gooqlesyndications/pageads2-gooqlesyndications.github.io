@@ -1,0 +1,1 @@
+# pageads2-gooqlesyndications.github.io
